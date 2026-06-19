@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshith Kongara | Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h1>Rakshith Kongara</h1>
+
+            <h2>
+                Data Analyst | SQL | Power BI | Tableau | Python
+            </h2>
+
+            <p>
+                Turning Data into Insights
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Profile Section -->
+
+    <section class="profile-section">
+
+        <div class="profile-image">
+
+            <img src="/static/profile.jpg"
+                 alt="Profile Picture">
+
+        </div>
+
+        <div class="profile-info">
+
+            <h2>Rakshith Kongara</h2>
+
+            <p>
+                5+ Years Experience in Business Intelligence,
+                SQL Development and Analytics.
+            </p>
+
+        </div>
+
+        <button class="resume-btn">
+            Download Resume
+        </button>
+
+    </section>
+
+
+    <!-- Navigation Tabs -->
+
+    <nav class="tabs">
+
+        <button class="tab active"
+                onclick="showTab('about')">
+            About
+        </button>
+
+        <button class="tab"
+                onclick="showTab('experience')">
+            Work Experience
+        </button>
+
+        <button class="tab"
+                onclick="showTab('skills')">
+            Skills
+        </button>
+
+        <button class="tab"
+                onclick="showTab('certifications')">
+            Certifications
+        </button>
+
+        <button class="tab"
+                onclick="showTab('contact')">
+            Contact
+        </button>
+
+    </nav>
+
+
+    <!-- ABOUT -->
+
+    <section id="about"
+             class="content active-content">
+
+        <div class="card">
+
+            <h3>About Me</h3>
+
+            <p>
+                I am a Data Analyst and BI Developer with
+                experience building dashboards, reporting
+                solutions, ETL pipelines and data models
+                using SQL, Power BI, Tableau and Python.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience"
+             class="content">
+
+        <div class="experience-grid">
+
+            <div class="experience-card">
+
+                <h3>Elevance Health</h3>
+
+                <p>SQL BI Developer</p>
+
+                <span>Oct 2024 - Present</span>
+
+            </div>
+
+            <div class="experience-card">
+
+                <h3>Liberty Mutual</h3>
+
+                <p>Data Analyst</p>
+
+                <span>Jan 2023 - Sep 2024</span>
+
+            </div>
+
+            <div class="experience-card">
+
+                <h3>Optum</h3>
+
+                <p>BI Analyst</p>
+
+                <span>Feb 2019 - Nov 2021</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills"
+             class="content">
+
+        <div class="skills-container">
+
+            <span>SQL</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>Python</span>
+            <span>Azure SQL</span>
+            <span>ADF</span>
+            <span>SSIS</span>
+            <span>DAX</span>
+            <span>Snowflake</span>
+            <span>Databricks</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications"
+             class="content">
+
+        <div class="card">
+
+            <h3>Certifications</h3>
+
+            <ul>
+
+                <li>Microsoft Power BI Data Analyst</li>
+
+                <li>Azure Data Fundamentals</li>
+
+                <li>SQL Certification</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact"
+             class="content">
+
+        <div class="card">
+
+            <h3>Contact Information</h3>
+
+            <p>Email: yourmail@gmail.com</p>
+
+            <p>LinkedIn: linkedin.com/in/rakshith</p>
+
+            <p>GitHub: github.com/rakshithkongara03-maker</p>
+
+        </div>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
