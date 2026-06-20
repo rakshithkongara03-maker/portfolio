@@ -36,9 +36,8 @@
     <section class="profile-section">
 
         <div class="profile-image">
-
-            <img src="/static/profile.jpg"
-                 alt="Profile Picture">
+    <img src="{{ url_for('static', filename='profile.jpg') }}"
+     alt="Rakshith Kongara">
 
         </div>
 
@@ -53,9 +52,11 @@
 
         </div>
 
-        <button class="resume-btn">
-            Download Resume
-        </button>
+       <a href="{{ url_for('static', filename='Rakshith_Kongara_Template_Resume.docx') }}"
+   download
+   class="resume-btn">
+   📄 Download Resume
+</a>
 
     </section>
 
@@ -80,8 +81,8 @@
         </button>
 
         <button class="tab"
-                onclick="showTab('certifications')">
-            Certifications
+        onclick="showTab('education')">
+          Education & Training
         </button>
 
         <button class="tab"
@@ -102,10 +103,12 @@
             <h3>About Me</h3>
 
             <p>
-                I am a Data Analyst and BI Developer with
-                experience building dashboards, reporting
-                solutions, ETL pipelines and data models
-                using SQL, Power BI, Tableau and Python.
+                I'm Rakshith, a Business Intelligence and Data Analytics professional passionate
+                about transforming data into actionable insights. When I'm not building dashboards
+                or working with data, you'll probably find me playing sports, listening to music,
+                exploring new trekking trails, or planning my next outdoor adventure.
+                I enjoy continuous learning, solving real-world problems, and creating solutions
+                that make a meaningful impact.
             </p>
 
         </div>
@@ -116,43 +119,108 @@
     <!-- EXPERIENCE -->
 
     <section id="experience"
-             class="content">
+         class="content">
 
-        <div class="experience-grid">
+    <div class="experience-grid">
 
-            <div class="experience-card">
+        <div class="experience-card">
 
-                <h3>Elevance Health</h3>
+    <h3>RTR Group INC</h3>
 
-                <p>SQL BI Developer</p>
+    <p>Data Engineer</p>
 
-                <span>Oct 2024 - Present</span>
+    <span>December 2024 – April 2026</span>
 
-            </div>
+    <p class="location">
+        Arlington, TX
+    </p>
 
-            <div class="experience-card">
+    <ul class="achievement-list">
+        <li>Built and maintained data pipelines that helped teams access reliable reporting data without manual effort.</li>
 
-                <h3>Liberty Mutual</h3>
+        <li>Worked closely with business users to understand reporting needs and translate them into practical data solutions.</li>
 
-                <p>Data Analyst</p>
+        <li>Improved dashboard performance by optimizing SQL queries and streamlining data processing workflows.</li>
+    </ul>
 
-                <span>Jan 2023 - Sep 2024</span>
+       </div>
 
-            </div>
+        <div class="experience-card">
 
-            <div class="experience-card">
+    <h3>Vision Technologies</h3>
 
-                <h3>Optum</h3>
+    <p>Data Engineer</p>
 
-                <p>BI Analyst</p>
+    <span>June 2023 – November 2024</span>
 
-                <span>Feb 2019 - Nov 2021</span>
+    <p class="location">
+        Austin, TX
+    </p>
 
-            </div>
+    <ul class="achievement-list">
+        <li>Developed reporting solutions using SQL and Power BI to support operational and business decision-making.</li>
 
-        </div>
+        <li>Collaborated with cross-functional teams to gather requirements and deliver data-driven insights.</li>
 
-    </section>
+        <li>Automated recurring reporting processes, reducing the time spent on manual data preparation.</li>
+    </ul>
+
+      </div>
+
+        <div class="experience-card">
+
+    <h3>Amazon Development Center India</h3>
+
+    <p>Last Mile Analytics and Quality Specialist</p>
+
+    <span>June 2020 – October 2021</span>
+
+    <p class="location">
+        Hyderabad, India
+    </p>
+
+    <ul class="achievement-list">
+        <li>Analyzed delivery and operational data to identify trends affecting last-mile performance and quality.</li>
+
+        <li>Created reports that helped leadership track key metrics and improve operational efficiency.</li>
+
+        <li>Partnered with multiple teams to investigate issues, validate data, and support process improvements.</li>
+    </ul>
+
+      </div>
+        <div class="experience-card">
+
+        <h3>INSOFE</h3>
+
+        <p>Data Engineering Intern</p>
+
+        <span>March 2019 – October 2019</span>
+
+        <p class="location">
+            Hyderabad, India
+        </p>
+
+        <ul class="achievement-list">
+
+            <li>
+                Assisted in building ETL pipelines using Python and SQL for data processing and reporting projects.
+            </li>
+
+            <li>
+                Worked on data cleaning, transformation, and validation to improve dataset quality and consistency.
+            </li>
+
+            <li>
+                Supported machine learning and analytics initiatives by preparing datasets and documenting project findings.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
 
 
     <!-- SKILLS -->
@@ -178,48 +246,101 @@
     </section>
 
 
-    <!-- CERTIFICATIONS -->
+    <!-- Education & Certifications -->
 
-    <section id="certifications"
-             class="content">
+    <section id="education"
+         class="content">
 
-        <div class="card">
+    <div class="card">
 
-            <h3>Certifications</h3>
+        <h3>Education & Training</h3>
 
-            <ul>
+        <div class="education-card">
 
-                <li>Microsoft Power BI Data Analyst</li>
+            <h4>Master of Science in Engineering Management</h4>
 
-                <li>Azure Data Fundamentals</li>
+            <p>Cumberland University</p>
 
-                <li>SQL Certification</li>
-
-            </ul>
+            <p>
+                Focused on leadership, project management,
+                operations, analytics, and business strategy.
+            </p>
 
         </div>
 
-    </section>
+        <div class="education-card">
 
+            <h4>Data Science Certification</h4>
+
+            <p>INSOFE (International School of Engineering)</p>
+
+            <p>
+                Completed training in Python, Statistics,
+                Machine Learning, Data Visualization,
+                Predictive Analytics, and Data Science concepts.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <h4>Data Science Internship</h4>
+
+            <p>INSOFE</p>
+
+            <p>
+                Worked on real-world datasets, performed data
+                cleaning and exploratory analysis, built machine
+                learning models, and presented analytical findings
+                to support business decision-making.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- CONTACT -->
 
     <section id="contact"
-             class="content">
+         class="content">
 
-        <div class="card">
+    <div class="card">
 
-            <h3>Contact Information</h3>
+        <h3>Contact Information</h3>
 
-            <p>Email: yourmail@gmail.com</p>
+        <p>
+            📧
+            <a href="mailto:rakshithcr83@gmail.com">
+                rakshithcr83@gmail.com
+            </a>
+        </p>
 
-            <p>LinkedIn: linkedin.com/in/rakshith</p>
+        <p>
+            📱
+            <a href="tel:+15737304276">
+                573-730-4276
+            </a>
+        </p>
 
-            <p>GitHub: github.com/rakshithkongara03-maker</p>
+        <p>
+            💼
+            <a href="https://linkedin.com/in/rakshith-kongara" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
 
-        </div>
+        <p>
+            💻
+            <a href="https://github.com/rakshithkongara03-maker" target="_blank">
+                GitHub Portfolio
+            </a>
+        </p>
 
-    </section>
+    </div>
+
+</section>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
